@@ -81,7 +81,7 @@ const HomePage = () => {
                   <MDBRow className="row-cols-lg-auto g-3 justify-content-center align-items-center mb-4 pb-2">
                     <MDBCol size="12">
                       <MDBInput
-                        label="Enter a task here"
+                        label="Enter a task here ..."
                         id="form1"
                         type="text"
                         value={title}

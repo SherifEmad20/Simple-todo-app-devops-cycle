@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: todo-frontend
-        image: sherifemad21/todo-app-frontend:arm
+        image: sherifemad21/todo-app-frontend:test-argo-arm
         resources:
           requests:
             memory: 50M
