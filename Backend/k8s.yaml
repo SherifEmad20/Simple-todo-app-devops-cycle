@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: todo-backend
-        image: sherifemad21/todo-app-backend:last-version2
+        image: sherifemad21/todo-app-backend:arm
         resources:
           requests:
             memory: 200M
@@ -45,12 +45,12 @@ kind: Ingress
 metadata:
   name: todo-backend-ingress
   namespace: todo-app
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
+  # annotations:
+  #   nginx.ingress.kubernetes.io/rewrite-target: /
   labels:
     name: todo-backend-ingress
 spec:
-  ingressClassName: nginx
+  # ingressClassName: nginx
   rules:
   - host: todo-app.local
     http:
