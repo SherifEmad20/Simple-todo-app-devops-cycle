@@ -45,12 +45,9 @@ kind: Ingress
 metadata:
   name: todo-frontend-ingress
   namespace: todo-app
-  # annotations:
-  #   nginx.ingress.kubernetes.io/rewrite-target: /
   labels:
     name: todo-frontend-ingress
 spec:
-  # ingressClassName: nginx
   rules:
   - host: todo-app-frontend.local
     http:
